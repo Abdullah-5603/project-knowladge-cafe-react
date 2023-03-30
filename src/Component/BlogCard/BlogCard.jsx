@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { useState } from 'react';
 import './BlogCard.css'
 
-const BlogCard = ({blog, handleReadTime}) => {
+const BlogCard = ({blog, handleReadTime, handleBookmark}) => {
 
     const {AuthorName, BlogTitle, Images, ReadTime, PublishDate} = blog;
     return (
@@ -19,7 +19,7 @@ const BlogCard = ({blog, handleReadTime}) => {
                 </div>
                 <div className='d-flex align-items-center'>
                     <p className='mt-3 mx-2'>{ReadTime} min read</p>
-                    <FontAwesomeIcon icon={faBookmark}></FontAwesomeIcon>
+                    <FontAwesomeIcon onClick={() => handleBookmark(BlogTitle)} icon={faBookmark}></FontAwesomeIcon>
                 </div>
             </div>
             <p className='blog-title text-start'>{BlogTitle}</p>
