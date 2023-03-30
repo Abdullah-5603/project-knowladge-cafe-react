@@ -1,4 +1,6 @@
 .bookmark{
+    border-radius: 5px;
+    margin: 15px;
     background-color: white;;
     padding: 10px;
 }

@@ -1,9 +1,9 @@
 import React from 'react';
 import './Bookmark.css'
-const Bookmark = (props) => {
+const Bookmark = ({bm}) => {
     return (
         <div className='bookmark'>
-            <p className='bookmark-text'>{props}</p>
+            <p className='bookmark-text'>{bm}</p>
         </div>
     );
 };
