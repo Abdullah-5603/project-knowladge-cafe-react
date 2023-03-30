@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import BlogCard from '../BlogCard/BlogCard';
+import SideCard from '../SideCard/SideCard';
 import './Blogs.css'
 
-const Blogs = () => {
+const Blogs = ({handleReadTime, readTimes}) => {
     const [blogs, setBlog] = useState([]);
 
     useEffect(() =>{
@@ -15,13 +16,16 @@ const Blogs = () => {
             <div className='blog-card-container col-md-8'>
                 {
                     blogs.map(blog => <BlogCard
+                    handleReadTime={handleReadTime}
                     blog={blog}
                     key={blog.id}
                     ></BlogCard>)
                 }
             </div>
             <div className='bookmark-cart col-md-4 card border-0'>
-
+                <SideCard
+                readTimes={readTimes}
+                ></SideCard>
             </div>
         </div>
     );

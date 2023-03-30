@@ -22,6 +22,7 @@
     line-height: 160%;
 }
 .read-btn{
+    background-color: transparent;
     width: 17%;
     color: #6047EC;
     text-decoration: underline;
