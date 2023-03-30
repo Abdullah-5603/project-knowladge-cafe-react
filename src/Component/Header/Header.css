@@ -1,4 +1,7 @@
 .nav-title {
+    justify-content: flex-start;
+}
+.nav-title-text{
     font-family: 'Exo 2';
     font-style: normal;
     font-weight: 700;
@@ -6,13 +9,12 @@
     color: #000;
 }
 .header{
-    top: 0;
     height: 80px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 nav.header a{
     text-decoration: none;
@@ -21,4 +23,20 @@ nav.header a{
 }
 nav.header a:hover{
     color: goldenrod;
+}
+@media (max-width: 768px) {
+    .nav-title-text{
+        font-size: 20px;
+    }
+    nav.header a{
+        font-size: 12px;
+        margin-left: 10px;
+    }
+    .header-img{
+        width: 40px;
+    }
+    .header{
+        padding-left: 0px;
+        padding-right: 5px;
+    }
 }

@@ -14,16 +14,16 @@ const BlogCard = ({blog, handleReadTime, handleBookmark}) => {
                 <img src={Images.AuthorImage} alt="" className='author-image'/>
                     <div className='ms-3'>
                     <p className='author-name'>{AuthorName}</p>
-                    <p>{PublishDate}</p>
+                    <p className='publish-date'>{PublishDate}</p>
                     </div>
                 </div>
                 <div className='d-flex align-items-center'>
-                    <p className='mt-3 mx-2'>{ReadTime} min read</p>
+                    <p className='read-time mt-3 mx-2'>{ReadTime} min read</p>
                     <FontAwesomeIcon onClick={() => handleBookmark(BlogTitle)} icon={faBookmark}></FontAwesomeIcon>
                 </div>
             </div>
             <p className='blog-title text-start'>{BlogTitle}</p>
-            <p className='text-start'>#bigener <span className='ms-3'>#programming</span> </p>
+            <p className='hash-tag text-start'>#bigener <span className='ms-3'>#programming</span> </p>
             <button onClick={() => handleReadTime(ReadTime)} className='read-btn'>Mark as read</button>
         </div>
     );
