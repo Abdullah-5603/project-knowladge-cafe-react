@@ -27,7 +27,7 @@
     color: #6047EC;
     text-decoration: underline;
 }
-@media (max-width: 768px) {
+@media (max-width: 500px) {
     .blog-cover-image {
       height: 27vh;
     }

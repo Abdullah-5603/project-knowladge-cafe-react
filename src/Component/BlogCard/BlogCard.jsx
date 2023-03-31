@@ -1,6 +1,5 @@
 import { faBookmark } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import React, { useState } from 'react';
 import './BlogCard.css'
 
 const BlogCard = ({blog, handleReadTime, handleBookmark}) => {

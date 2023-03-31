@@ -16,7 +16,7 @@
     font-weight: 700;
     
 }
-@media (max-width: 768px) {
+@media (max-width: 500px) {
     .spent-time{
         font-size: 15px;
     }
